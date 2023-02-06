@@ -1,0 +1,36 @@
+{% load static%}
+<!doctype html>
+<html>
+<head>
+    <link rel='stylesheet' href="{% static 'style.css' %}">
+<title>Full Moon Apothecary</title>
+<meta name="description" content="Our first page">
+<meta name="keywords" content="html tutorial template">
+    
+</head>
+    <header class="child">
+        <h1 class ="title">Welcome to The Full Moon Cafe</h1>
+    
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a class='nav-links' href="home"> Home </a></li>
+        
+            <li> <a class='nav-links' href="herb_list"> Herbs </a></li>
+        
+            <li><a class="nav-links" href=""> Mixes </a></li>
+            
+            <li> Search bar</li>
+        </ul>
+    </nav>
+    </header>
+<body>
+    <img  id="banner" src="{% static 'flowers.jpg' " alt =''/>
+   {%block content %} <h1 id="bodyh1" >Welcome to the Full moon cafe</h1>
+    <p> Here we aim to educate and offer information and insight into common and uncommon herbs, fungi</p>
+{% endblock %}
+</body>
+    <footer class="footer">
+    <p>Disclaimer </p>
+        <p>Page Created by Jair Brown</p>
+    </footer>
+</html> 
