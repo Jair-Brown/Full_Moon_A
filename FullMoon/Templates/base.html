@@ -1,4 +1,4 @@
-{% load static%}
+{% load static %}
 <!doctype html>
 <html>
 <head>
@@ -13,18 +13,20 @@
     
     <nav class="nav">
         <ul class="nav-links">
-            <li><a class='nav-links' href="home"> Home </a></li>
+            <li><a class='nav-links' href="{% url 'home'%}" > Home </a></li>
         
-            <li> <a class='nav-links' href="herb_list"> Herbs </a></li>
+            <li> <a class='nav-links' href="{% url 'list' %}"> Herbs </a></li>
         
             <li><a class="nav-links" href=""> Mixes </a></li>
             
-            <li> Search bar</li>
+            <li> <form> 
+
+            </form></li>
         </ul>
     </nav>
     </header>
 <body>
-    <img  id="banner" src="{% static 'flowers.jpg' " alt =''/>
+    <img  id="banner" src="{% static 'flowers.jpg' %} " alt ='A Field of Flowers'/>
    {%block content %} <h1 id="bodyh1" >Welcome to the Full moon cafe</h1>
     <p> Here we aim to educate and offer information and insight into common and uncommon herbs, fungi</p>
 {% endblock %}

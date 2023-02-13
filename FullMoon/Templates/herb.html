@@ -2,13 +2,15 @@
 
 {% block content %}
 <body>
-    <H1>This is our current list of Herbs</H1>
-{% for herb in herbs %}
+    <center>
+    <H1>You are looking at {{herb.name}} </H1>
+    <p>This herb is good for : {{herb.uses}}</p>
 
-    <p>{{ herb.name }}</p>
+</center>
+   
     <br>
 
-{% endfor %}
+
 
 </body>
 {% endblock %}
