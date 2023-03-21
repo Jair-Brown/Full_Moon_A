@@ -15,20 +15,12 @@ def herb_list(request):
 
     return render(request, "listings.html", context)
 
-def herb_view(request, id):
+def herb_view(request, name):
     # returns specific herb from database with uses
-  herb = Herbs.objects.get(pk=id)
+  herb = Herbs.objects.get(name = name)
   context = {"herb": herb}
   return render(request, "herb.html", context)
 
 def home(request):
     return render(request, "base.html")
 
-def search(request):
-    if request == method.POST:
-
-
-        return render(request, "", {})
-
-    else:
-        return render(request, "", {})

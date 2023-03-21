@@ -9,25 +9,13 @@
     
 </head>
     <header class="child">
-        <h1 class ="title">Welcome to The Full Moon Cafe</h1>
+        <h1 class ="title">Full Moon Apothecary</h1>
     
-    <nav class="nav">
-        <ul class="nav-links">
-            <li><a class='nav-links' href="{% url 'home'%}" > Home </a></li>
-        
-            <li> <a class='nav-links' href="{% url 'list' %}"> Herbs </a></li>
-        
-            <li><a class="nav-links" href=""> Mixes </a></li>
-            
-            <li> <form> 
 
-            </form></li>
-        </ul>
-    </nav>
     </header>
 <body>
     <img  id="banner" src="{% static 'flowers.jpg' %} " alt ='A Field of Flowers'/>
-   {%block content %} <h1 id="bodyh1" >Welcome to the Full moon cafe</h1>
+   {%block content %} <h1 id="bodyh1" >Welcome to the Full moon Apothecary</h1>
     <p> Here we aim to educate and offer information and insight into common and uncommon herbs, fungi</p>
 {% endblock %}
 </body>

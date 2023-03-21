@@ -1,4 +1,4 @@
-
+/* old stylesheet
 body{
     display:flex;
     background: RGB(59, 47, 47);
@@ -64,4 +64,99 @@ li{
     
     
     
+} */
+
+
+body{
+    display:flex;
+    background: RGB(109, 125, 104);
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0;
+    border: 0;
+    margin:0;
+    
+    
+    
+}
+.child{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    background: RGB(68, 46, 44);
+    height: 100%;
+    width: 100%;
+    font-family:"Fantasy", 'Papyrus' ;
+/*    border-radius: 10px;*/
+    color:RGB(109, 125, 104);
+    
+    
+}
+a {
+    color:black;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    color:silver;
+    font-family:"Fantasy", 'Papyrus' ;
+    
+}
+.nav{
+    display:flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    flex-direction: row;
+    
+}
+    
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    color:silver;
+}
+
+li{
+    list-style-type: none;
+    padding: 10px;
+    font-size: 20px;
+}
+.footer{
+    display: flex;
+    /* background: RGB(61, 79, 56); */
+    background: RGB(68, 46, 44);
+
+    justify-content: space-around;
+    margin-top: auto;
+    color: silver;
+}
+#bodyh1{
+    display:flex;
+    justify-content: center;
+    
+}
+
+body{
+    display: flex;
+    font-family: "fantasy", 'papyrus';
+    color: gold;
+}
+
+p{
+    font-size: 20px;
+}
+
+
+#banner{
+    display: flex;
+    height: 200px;
+    object-fit: cover ;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.icons{
+    height:15px;
+    width: 20px;
 }
