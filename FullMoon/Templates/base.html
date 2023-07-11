@@ -1,22 +1,35 @@
 {% load static %}
 <!doctype html>
-<html>
+
 <head>
-    <link rel='stylesheet' href="{% static 'style.css' %}">
+    <link rel='stylesheet' href=
+    "{% static 'style.css' %}">
 <title>Full Moon Apothecary</title>
 <meta name="description" content="Our first page">
 <meta name="keywords" content="html tutorial template">
     
 </head>
     <header class="child">
-        <h1 class ="title">Full Moon Apothecary</h1>
+        <h1 id = 'll' class ="title"><a href = "/">Full Moon Apothecary</a></h1>
+
+        <ul class="nav">
+            <li><a href = "list/">Herbs</a></li>
+            <li><a href = "">Mushrooms</a></li>
+            <li>
+               <form action = "{% url 'home:search_results' %}" method = "get">
+                <input name ="q" type="text" placeholder="search">
+               </form>
+            
+            </li>
+        </ul>
     
 
     </header>
+
 <body>
-    <img  id="banner" src="{% static 'flowers.jpg' %} " alt ='A Field of Flowers'/>
+    <!-- <img  id="banner" src="{% static 'flowers.jpg' %} " alt ='A Field of Flowers'/> -->
    {%block content %} <h1 id="bodyh1" >Welcome to the Full moon Apothecary</h1>
-    <p> Here we aim to educate and offer information and insight into common and uncommon herbs, fungi</p>
+    <p> Here we aim to educate and offer information and insight into common and uncommon herbs, fungi. For thousands of years traditional medicines have used homeopathic recipes to cure ailments, ease the mind, and transcend the mind and body. While more natural based healing practices have their place not all herbs and fungi are safe for consumption for everyone, in everyway, or mixed with certain things. Please be mindful of this and consult your physician or a professional when trying hers and remedies. </p>
 {% endblock %}
 </body>
     <footer class="footer">

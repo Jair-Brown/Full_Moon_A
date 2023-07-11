@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{%for herb in object_list %}
+<h1> Search results: {{herb.name}} </h1>
+
+
+<img src="{{herb.image.url}}" width="300px">
+ <h2>Description</h2>
+ {{herb.description}}
+{% endfor %}
+{% endblock %}

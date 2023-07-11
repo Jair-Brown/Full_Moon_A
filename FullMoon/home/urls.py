@@ -1,12 +1,15 @@
 from django.urls import path
-from . import views
+
+from .views import herb_list, herb_view, home, SearchResultsView
+
 
 
 app_name = 'home'
 urlpatterns = [
-    path('', views.home, name = 'home'),
-    path('list/', views.herb_list, name = 'list'),
-    path('list/<str:name>/', views.herb_view, name ='herb_view'),
-    
-    
+    path('', home, name='home'  ),
+    # path('list/', HerbListView.as_view(), name='list'),
+    path('list/', herb_list, name='list'),
+    path('list/<str:name>/', herb_view, name='herb_view'),
+    path('search/', SearchResultsView.as_view(), name="search_results"),
+
 ]
